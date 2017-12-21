@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar">
+
+        </include>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:layout_gravity="bottom"
+            >
+
+
+
+            <com.tutorialsee.ecommer.MyTextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/est"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Summer Wear"
+                android:textSize="16dp"
+                android:textColor="@color/colorSub"
+                android:gravity="center"
+                />
+
+                <com.tutorialsee.ecommer.MyTextView
+                android:visibility="visible"
+                android:id="@+id/itemname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cold Shoulder Top"
+                android:textSize="19dp"
+                android:textColor="@color/colorTex"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                />
+
+            <com.tutorialsee.ecommer.MyTextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$ 14"
+                android:textSize="16dp"
+                android:textColor="@color/colorTex"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="3dp"
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/addtocart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectss"
+            android:src="@mipmap/cartww"
+            android:padding="14dp"
+            android:elevation="8dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="16dp"
+
+            />
+
+
+
+
+
+
+    </FrameLayout>
+</RelativeLayout>
